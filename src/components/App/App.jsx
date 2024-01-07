@@ -29,12 +29,6 @@ export class App extends Component {
       alert(`${contactData.name} is already in contacts`);
       return;
     }
-
-    this.setState({
-      name: '',
-      number: '',
-    });
-
     this.setState({
       contacts: [contactBook, ...this.state.contacts],
     });
